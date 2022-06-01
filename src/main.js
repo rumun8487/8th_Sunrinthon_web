@@ -1,10 +1,8 @@
-import App from './App.svelte';
+import Nav from './Nav.svelte';
 
-const app = new App({
-	target: document.body,
-	props: {
-		name: 'world'
-	}
+
+const nav = new Nav({
+	target: document.body
 });
 
-export default app;
+export default [nav];
