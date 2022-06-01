@@ -37,10 +37,19 @@
 
 :root {
 	--blue-green: #56ac9a;
+	--rgba-blue-green: rgba(86, 172, 154, 0.7);
+
 	--cream: #f8f0de;
+	--rgba-cream: rgba(248, 240, 222, 0.7);
+
 	--grey: #707073;
+	--rgba-grey: rgba(112, 112, 115, 0.7);
+
 	--brown: #8e7f89;
+	--rgba-brown: rgba(142, 127, 137, 0.7);
+
 	--skyblue: #61a6ad;
+	--rgba-skyblue: rgba(97, 166, 173, 0.7);
 }
 
 html, body {
