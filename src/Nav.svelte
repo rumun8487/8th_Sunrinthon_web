@@ -1,5 +1,5 @@
 <nav>
-    <div id="imageBox">
+    <!-- <div id="imageBox">
         <img src="/logo.png" alt="로고" id="nav_logo">
     </div>
 	<div id="nav_list_box">
@@ -10,12 +10,12 @@
             <li class="nav_item">대회 안내</li>
             <li class="nav_item">카드뉴스</li>
         </ul>
-    </div>
+    </div> -->
 </nav>
 
 <style>
     /**일단 임시로 박아논 css 수정 맘대로해봐요*/
-    nav{
+    /* nav{
         width: 100%;
         height : 15%;
         display: flex;
@@ -46,5 +46,5 @@
         font-family: 'SCDream7';
         color: white;
         float: left;
-    }
+    } */
 </style>

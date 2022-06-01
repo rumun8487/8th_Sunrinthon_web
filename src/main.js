@@ -1,8 +1,7 @@
-import Nav from './Nav.svelte';
+import Page1 from './Page1.svelte';
 
-
-const nav = new Nav({
+const Page = new Page1({
 	target: document.body
-});
+})
 
-export default [nav];
+export default [Page];

@@ -35,11 +35,19 @@
 	src: url('/fonts/SCDream7.otf') format('opentype');
 }
 
+:root {
+	--blue-green: #56ac9a;
+	--cream: #f8f0de;
+	--grey: #707073;
+	--brown: #8e7f89;
+	--skyblue: #61a6ad;
+}
+
 html, body {
 	position: relative;
 	width: 100%;
 	height: 100%;
-	background-color: #56ac9a;
+	
 }
 
 *{
