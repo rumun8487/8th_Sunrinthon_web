@@ -44,6 +44,11 @@
 
 	--grey: #707073;
 	--rgba-grey: rgba(112, 112, 115, 0.3);
+<<<<<<< HEAD
+=======
+
+	--grey-for-shadow: rgba(112, 112, 115, 0.7);
+>>>>>>> 975c6800a363a5c729294b8fa43ba4fcc44774d9
 
 	--brown: #8e7f89;
 	--rgba-brown: rgba(142, 127, 137, 0.7);
@@ -64,5 +69,82 @@ html, body {
 	padding: 0;
 }
 
+<<<<<<< HEAD
 
 
+=======
+.grid {
+	background-image: linear-gradient(to top, var(--rgba-grey) 1px, transparent 1px),
+		linear-gradient(to left, var(--rgba-grey) 1px , transparent 1px),
+		linear-gradient(to left, var(--rgba-grey) 1px, transparent 1px),
+		linear-gradient(to left, var(--rgba-grey) 1px, transparent 1px),
+		linear-gradient(to left, var(--rgba-grey) 1px, transparent 1px),
+		linear-gradient(to left, var(--rgba-grey) 1px, transparent 1px),
+		linear-gradient(to left, var(--rgba-grey) 1px, transparent 1px),
+		linear-gradient(to left, var(--rgba-grey) 1px, transparent 1px),
+		linear-gradient(to left, var(--rgba-grey) 1px, transparent 1px);
+	background-size: 
+		10vw 10vh,
+		10vw 10vh,
+		15vw 10vh,
+		25vw 10vh,
+		35vw 10vh,
+		55vw 10vh,
+		65vw 10vh,
+		75vw 10vh,
+		85vw 10vh;
+}
+
+@media only screen and (max-width: 1200px) {
+	.grid {
+		background-image: linear-gradient(to top, var(--rgba-grey) 1px, transparent 1px),
+			linear-gradient(to left, var(--rgba-grey) 1px , transparent 1px);
+		background-size: 
+			10vw 10vh,
+			10vw 10vh;
+	}
+}
+
+.bluegreen {
+	color: var(--blue-green);
+}
+
+.cream {
+	color: var(--cream);
+}
+
+.grey {
+	color: var(--grey);
+}
+
+.brown {
+	color: var(--brown);
+}
+
+.skyblue {
+	color: var(--skyblue);
+}
+
+.sc1 {
+	font-family: "SCDream1";
+}
+
+.sc2 {
+	font-family: "SCDream2";
+}
+.sc3 {
+	font-family: "SCDream3";
+}
+.sc4 {
+	font-family: "SCDream4";
+}
+.sc5 {
+	font-family: "SCDream5";
+}
+.sc6 {
+	font-family: "SCDream6";
+}
+.sc7 {
+	font-family: "SCDream7";
+}
+>>>>>>> 975c6800a363a5c729294b8fa43ba4fcc44774d9
