@@ -48,4 +48,33 @@
         color: white;
         float: left;
     }
+
+    @media only screen and (max-width: 820px) {
+        nav {
+            height: 20%;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        #imageBox {
+            max-width: 100%;
+            max-height: 100%;
+        }
+
+        #nav_logo {
+            margin-top: 0px;
+        }
+
+        #nav_list {
+            display: flex;
+            
+            justify-content: space-around;
+        }
+
+        .nav_item {
+            font-size: 14px;
+            font-family: "SCDream5";
+            margin-left: 10px
+        }
+    }
 </style>
