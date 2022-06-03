@@ -1,23 +1,23 @@
 <nav>
-    <!-- <div id="imageBox">
+    <div id="imageBox">
         <img src="/logo.png" alt="로고" id="nav_logo">
     </div>
 	<div id="nav_list_box">
         <ul id="nav_list">
-            <li class="nav_item">메인화면</li>
-            <li class="nav_item">타이머 & 일정</li>
-            <li class="nav_item">참가팀</li>
-            <li class="nav_item">대회 안내</li>
-            <li class="nav_item">카드뉴스</li>
+            <li class="nav_item" onclick="">메인화면</li>
+            <li class="nav_item" onclick="">타이머 & 일정</li>
+            <li class="nav_item" onclick="">참가팀</li>
+            <li class="nav_item" onclick="">대회 안내</li>
+            <li class="nav_item" onclick="">카드뉴스</li>
         </ul>
-    </div> -->
+    </div> 
 </nav>
 
 <style>
     /**일단 임시로 박아논 css 수정 맘대로해봐요*/
-    /* nav{
+    nav{
         width: 100%;
-        height : 15%;
+        height : 10%;
         display: flex;
         justify-content: space-around;
     }
@@ -37,6 +37,7 @@
     }
     #nav_list {
         list-style: none;
+        user-select: none;
     }
     .nav_item {
         display: list-item;
@@ -46,5 +47,5 @@
         font-family: 'SCDream7';
         color: white;
         float: left;
-    } */
+    }
 </style>
