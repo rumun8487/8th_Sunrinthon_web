@@ -15,6 +15,7 @@
     </div>
     <div id="page1_cont2">
         <img src="/textBubble.png" alt="선린 인터넷" id="textBubble">
+        <img src="/cursor.png" alt="커서" id="handCursor">
     </div>
 </main>
 
@@ -67,6 +68,17 @@
     }
 
     #textBubble {
+        position: relative;
+        z-index: 1;
         width: 70%;
+        filter: drop-shadow(0.6em 1em 0.5em var(--grey-for-shadow));
+    }
+
+    #handCursor {
+        position: absolute;
+        z-index: 3;
+        width: 5%;
+        margin-left: 30%;
+        margin-top: 15%;
     }
 </style>

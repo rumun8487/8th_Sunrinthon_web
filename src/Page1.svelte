@@ -4,7 +4,7 @@
 </script>
 
 <div id="page" class="grid">
-    <div id="tempNav">tempNav</div>
+    <Nav></Nav>
     <Main></Main>
     <div style="height: 300vh; width: 100%"></div>
 </div>

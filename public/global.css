@@ -44,11 +44,8 @@
 
 	--grey: #707073;
 	--rgba-grey: rgba(112, 112, 115, 0.3);
-<<<<<<< HEAD
-=======
 
 	--grey-for-shadow: rgba(112, 112, 115, 0.7);
->>>>>>> 975c6800a363a5c729294b8fa43ba4fcc44774d9
 
 	--brown: #8e7f89;
 	--rgba-brown: rgba(142, 127, 137, 0.7);
@@ -69,10 +66,6 @@ html, body {
 	padding: 0;
 }
 
-<<<<<<< HEAD
-
-
-=======
 .grid {
 	background-image: linear-gradient(to top, var(--rgba-grey) 1px, transparent 1px),
 		linear-gradient(to left, var(--rgba-grey) 1px , transparent 1px),
@@ -147,4 +140,3 @@ html, body {
 .sc7 {
 	font-family: "SCDream7";
 }
->>>>>>> 975c6800a363a5c729294b8fa43ba4fcc44774d9
