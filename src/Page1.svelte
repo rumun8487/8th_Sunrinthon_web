@@ -6,11 +6,12 @@
 <div id="page" class="grid">
     <div id="tempNav">tempNav</div>
     <Main></Main>
+    <div style="height: 300vh; width: 100%"></div>
 </div>
 
 <style>
     #tempNav{
-        width: 100vw;
+        width: 100%;
         height: 15%;
         background-color: white;
     }
