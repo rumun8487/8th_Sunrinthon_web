@@ -21,6 +21,7 @@
 
 <style>
     main {
+        margin-top: 5%;
         display: flex;
         height: 75%;
     }
