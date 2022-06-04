@@ -57,6 +57,7 @@
         }
 
         #imageBox {
+            margin-top: 10px;
             max-width: 100%;
             max-height: 100%;
         }
