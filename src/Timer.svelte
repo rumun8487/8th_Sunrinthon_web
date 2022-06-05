@@ -1,4 +1,20 @@
 <script>
+    const handleUndefined = variable => variable || '00:00:00'
+    const qualificationDue = new Date("6/18/22");
+    let hour, min, sec;
+    let formated;
+    const timeLeft = setInterval(() => {
+        let remaining = qualificationDue - Date.now();
+
+        hour = Math.floor(remaining/1000  / 60 / 60);
+        remaining -= hour* 1000 * 60 * 60
+        min = Math.floor(remaining / 1000 / 60);
+        remaining -= min * 1000 * 60
+        sec = Math.floor(remaining / 1000);
+
+        formated = `${hour.toString().padStart(2,'0')}:${min.toString().padStart(2,'0')}:${sec.toString().padStart(2,'0')}`
+    }, 1000);
+
 </script>
 
 <div id="contentBox">
@@ -8,7 +24,7 @@
     </div>
     <div id="bubbleBox">
         <div id="speechBubble">
-            <p class="sc7 cream">00:00:00</p>
+            <p class="sc7 cream">{handleUndefined(formated)}</p>
         </div>
     </div>
 </div>
