@@ -1,17 +1,14 @@
 <script>
-
 </script>
 
 <div id="contentBox">
-    <div id="anotherBox">
-        <div id="textBox">
-            <p>타이머 및 일정표</p>
-            <p>예선 마감 까지</p>
-        </div>
-        <div id="bubbleBox">
-            <div id="speechBubble">
-                <p class="sc7 cream">00:00:00</p>
-            </div>
+    <div id="textBox">
+        <p class="sc8">타이머 및 일정표</p>
+        <p class="sc7 bluegreen">예선 마감 까지</p>
+    </div>
+    <div id="bubbleBox">
+        <div id="speechBubble">
+            <p class="sc7 cream">00:00:00</p>
         </div>
     </div>
 </div>
@@ -19,33 +16,28 @@
 <style>
     #contentBox {
         width: 100%;
-        height: 45%;
-        display: flex;
-        
-    }
-
-    #anotherBox {
-        display: flex;
+        height: 35%;
     }
     #textBox {
-        display:flex;
+        display: flex;
         flex-direction: column;
     }
     #textBox :nth-child(1) {
+        font-size: 24px;
         align-self: flex-start;
     }
     #textBox :nth-child(2) {
+        font-size: 24px;
         align-self: flex-end;
     }
-    #bubbleBox{
+    #bubbleBox {
         background-color: var(--blue-green);
         height: fit-content;
         width: 100%;
     }
 
     #speechBubble {
-        
-        position:relative;
+        position: relative;
         width: 100%;
         height: fit-content;
         border-radius: 10px;

@@ -22,14 +22,13 @@
         justify-content: center;
         align-items: center;
     }
+    
+    #title > p {
+        font-size: 18px;
+    }
 
     #contentBox {
         width: 70%;
-        height: 70%;
-        display: flex;
-    }
-
-    #title {
-        height: calc(70% / 20);
+        height: 90%;
     }
 </style>
