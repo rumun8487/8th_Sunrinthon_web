@@ -17,7 +17,7 @@
 
 </script>
 
-<div id="contentBox">
+<div id="timerBox">
     <div id="textBox">
         <p class="sc8">타이머 및 일정표</p>
         <p class="sc7 bluegreen">예선 마감 까지</p>
@@ -30,7 +30,7 @@
 </div>
 
 <style>
-    #contentBox {
+    #timerBox {
         width: 100%;
         height: 35%;
     }
@@ -66,7 +66,7 @@
         content: "";
         width: 0px;
         height: 0px;
-        right: 48.5%;
+        right: 49.15%;
         top: 100%;
         position: absolute;
         border-top: 30px solid var(--blue-green);

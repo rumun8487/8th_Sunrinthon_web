@@ -8,8 +8,10 @@
         <div>
             <div id="title"><p class="sc5">Timer & Schedule</p></div>
         </div>
-        <Timer></Timer>
-        <Schedule></Schedule>
+        <div id="components">
+            <Timer></Timer>
+            <Schedule></Schedule>
+        </div>
     </div>
 </div>
 
@@ -30,5 +32,15 @@
     #contentBox {
         width: 70%;
         height: 90%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    #components {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100%;
     }
 </style>
