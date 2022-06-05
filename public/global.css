@@ -35,6 +35,18 @@
 	src: url('/fonts/SCDream7.otf') format('opentype');
 }
 
+@font-face {
+	font-family: 'SCDream8';
+	src: url('/fonts/SCDream8.otf') format('opentype');
+}
+
+@font-face {
+	font-family: 'SCDream9';
+	src: url('/fonts/SCDream9.otf') format('opentype');
+}
+
+
+
 :root {
 	--blue-green: #56ac9a;
 	--rgba-blue-green: rgba(86, 172, 154, 0.7);
