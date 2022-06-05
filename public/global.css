@@ -52,13 +52,25 @@
 
 	--skyblue: #61a6ad;
 	--rgba-skyblue: rgba(97, 166, 173, 0.7);
+
+	--width: calc( 100vw - 100% );
 }
 
 html, body {
 	position: relative;
-	width: 100%;
+	width: var(--width);
 	height: 100%;
 }
+html {
+	overflow-x: hidden;
+	-ms-overflow-style: none;
+	scrollbar-width: none;
+}
+
+html::-webkit-scrollbar {
+	display: none;
+}
+
 *{
 	margin: 0;
 	padding: 0;
@@ -66,24 +78,10 @@ html, body {
 
 .grid {
 	background-image: linear-gradient(to top, var(--rgba-grey) 1px, transparent 1px),
-		linear-gradient(to left, var(--rgba-grey) 1px , transparent 1px),
-		linear-gradient(to left, var(--rgba-grey) 1px, transparent 1px),
-		linear-gradient(to left, var(--rgba-grey) 1px, transparent 1px),
-		linear-gradient(to left, var(--rgba-grey) 1px, transparent 1px),
-		linear-gradient(to left, var(--rgba-grey) 1px, transparent 1px),
-		linear-gradient(to left, var(--rgba-grey) 1px, transparent 1px),
-		linear-gradient(to left, var(--rgba-grey) 1px, transparent 1px),
-		linear-gradient(to left, var(--rgba-grey) 1px, transparent 1px);
+		linear-gradient(to left, var(--rgba-grey) 1px , transparent 1px);
 	background-size: 
-		10vw 10vh,
-		10vw 10vh,
-		15vw 10vh,
-		25vw 10vh,
-		35vw 10vh,
-		55vw 10vh,
-		65vw 10vh,
-		75vw 10vh,
-		85vw 10vh;
+		6.25vw 10vh,
+		6.25vw 10vh;
 }
 
 @media only screen and (max-width: 1200px) {
@@ -119,7 +117,6 @@ html, body {
 .sc1 {
 	font-family: "SCDream1";
 }
-
 .sc2 {
 	font-family: "SCDream2";
 }
@@ -141,7 +138,6 @@ html, body {
 .sc8 {
 	font-family: "SCDream8";
 }
-
 .sc8 {
 	font-family: "SCDream9";
 }

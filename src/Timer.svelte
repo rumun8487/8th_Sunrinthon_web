@@ -2,7 +2,7 @@
     const handleUndefined = variable => variable || '00:00:00'
     const qualificationDue = new Date("6/18/22");
     let hour, min, sec;
-    let formated;
+    let formatedRemaining;
     const timeLeft = setInterval(() => {
         let remaining = qualificationDue - Date.now();
 
@@ -12,7 +12,7 @@
         remaining -= min * 1000 * 60
         sec = Math.floor(remaining / 1000);
 
-        formated = `${hour.toString().padStart(2,'0')}:${min.toString().padStart(2,'0')}:${sec.toString().padStart(2,'0')}`
+        formatedRemaining = `${hour.toString().padStart(2,'0')}:${min.toString().padStart(2,'0')}:${sec.toString().padStart(2,'0')}`
     }, 1000);
 
 </script>
@@ -24,7 +24,7 @@
     </div>
     <div id="bubbleBox">
         <div id="speechBubble">
-            <p class="sc7 cream">{handleUndefined(formated)}</p>
+            <p class="sc7 cream">{handleUndefined(formatedRemaining)}</p>
         </div>
     </div>
 </div>
