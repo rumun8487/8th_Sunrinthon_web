@@ -7,7 +7,7 @@
 
     </div>
     <div id="progressBarIcons">
-
+        <div class="markerIcon"></div>
     </div>
     <div>
         <div id="progressBar"></div>
@@ -19,4 +19,7 @@
 </div>
 
 <style>
+    .markerIcon {
+        
+    }
 </style>

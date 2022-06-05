@@ -26,7 +26,7 @@
     }
 
     #page1_cont1 {
-        width: 45vw;
+        width: 55vw;
         height: 100%;
         display: flex;
         justify-content: center;
@@ -54,13 +54,14 @@
         font-size: 50px;
     }
 
+
     #linkBox {
         width: fit-content;
         background-color: #f7e79e;
         color: #a07f4e;
-        border-radius: 5px;
+        border-radius: 10px;
         padding: 5px 40px 5px;
-        box-shadow: 2px 2px 2px 2px var(--grey-for-shadow);
+        box-shadow: 0px 10px 27px 2px rgba(0, 0, 0, 0.08);
     }
 
     #linkBox > span {
