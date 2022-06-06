@@ -1,4 +1,6 @@
 <script>
+    export let formatedNow;
+
     const MissionTimeLine = [
         "00 : 00",
         "00 : 00",
@@ -57,8 +59,8 @@
     <div id="barDescription">
         <div id="progressBar" />
         <div id="description">
-            <span>* 아이콘을 클릭하여 정보를 볼 수 있습니다</span>
-            <span>현재 시각 :</span>
+            <span class="sc5 bluegreen">* 아이콘을 클릭하여 정보를 볼 수 있습니다</span>
+            <span class="sc7 bluegreen">현재 시각 : {formatedNow}</span>
         </div>
     </div>
 </div>
@@ -99,5 +101,10 @@
     .markerSvg {
         margin-left: 9px;
         width: 51px;
+    }
+    #description {
+        width:95%;
+        display: flex;
+        justify-content: space-between;
     }
 </style>
