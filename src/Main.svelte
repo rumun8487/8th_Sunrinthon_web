@@ -122,5 +122,9 @@
             display: flex;
             justify-content: center;
         }
+
+        #linkBox{
+            
+        }
     }
 </style>
