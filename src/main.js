@@ -22,6 +22,10 @@ const DummyPage = new Dummy ({
 const TeamList = new Team_list({
 	target: document.body
 })
+const CardNews = new Card_news({
+	target: document.body
+})
 
 
-export default [Sidebar, Main,TimerSchedule,TeamList, DummyPage];
+
+export default [Sidebar, Main,TimerSchedule,TeamList, DummyPage, CardNews];
