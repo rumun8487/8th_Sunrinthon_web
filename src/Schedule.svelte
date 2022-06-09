@@ -107,4 +107,8 @@
         display: flex;
         justify-content: space-between;
     }
+
+    @media only screen and (max-width: 860px) {
+        
+    }
 </style>

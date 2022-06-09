@@ -40,14 +40,18 @@
         </div>
         <div id="components">
             <Timer formatedRemaining={handleUndefined(formatedRemaining)}></Timer>
-            <Schedule formatedNow = {handleUndefined(formatedNow)}></Schedule>
+            <!-- <Schedule formatedNow = {handleUndefined(formatedNow)}></Schedule> -->
         </div>
     </div>
 </div>
 
 <style>
     #page2 {
-        height: 100%;
+        /* 스케줄 표 있을 때 */
+        /* height: 100%; */
+        /* 스케줄 표 없을 때 */
+        height: 40%;
+
         width: 100%;
         background-color: var(--cream);
         display: flex;

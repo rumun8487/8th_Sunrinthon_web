@@ -68,18 +68,22 @@
 	--width: calc( 100vw - 100% );
 }
 
-html, body {
+html {
 	position: relative;
-	width: var(--width);
+	width: 100%;
+	overflow-x: hidden;
 	height: 100%;
+	
+}
+
+body {
+	height:100%;
 }
 html {
-	overflow-x: hidden;
 	-ms-overflow-style: none;
 	scrollbar-width: none;
 }
-
-html::-webkit-scrollbar {
+::-webkit-scrollbar {
 	display: none;
 }
 

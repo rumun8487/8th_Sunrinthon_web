@@ -123,4 +123,17 @@
             justify-content: center;
         }
     }
+
+    @media only screen and (min-width: 530px) and (max-width:820px){
+        #page1_cont2 {
+            top: 30%;
+            align-items: center;
+            height: 50%;
+        }
+
+        #linkBox {
+            font-size: 18px;
+        }
+    }
+
 </style>

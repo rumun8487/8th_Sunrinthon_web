@@ -10,7 +10,7 @@
     </div>
     <div id="bubbleBox">
         <div id="speechBubble">
-            <p class="sc7 cream">{formatedRemaining}</p>
+            <p id="timeText" class="sc7 cream">{formatedRemaining}</p>
         </div>
     </div>
 </div>
@@ -64,5 +64,19 @@
     #speechBubble > p {
         font-size: 64px;
         text-align: center;
+    }
+
+    @media only screen and (max-width: 860px) {
+        #speechBubble {
+            padding: 20px 0px 20px 0px;
+            width: 100%;
+        }
+
+        #speechBubble:before {
+            right: calc(50% - 30px)
+        }
+        #speechBubble > p {
+        font-size: 30px;
+    }
     }
 </style>

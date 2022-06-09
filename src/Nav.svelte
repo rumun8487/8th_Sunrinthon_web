@@ -1,8 +1,11 @@
+<script>
+</script>
+
 <nav>
     <div id="imageBox">
-        <img src="/logo.png" alt="로고" id="nav_logo">
+        <img src="/logo.png" alt="로고" id="nav_logo" />
     </div>
-	<div id="nav_list_box">
+    <div id="nav_list_box">
         <ul id="nav_list">
             <li class="nav_item" onclick="">메인화면</li>
             <li class="nav_item" onclick="">타이머 & 일정</li>
@@ -10,14 +13,14 @@
             <li class="nav_item" onclick="">대회 안내</li>
             <li class="nav_item" onclick="">카드뉴스</li>
         </ul>
-    </div> 
+    </div>
 </nav>
 
 <style>
     /**일단 임시로 박아논 css 수정 맘대로해봐요*/
-    nav{
+    nav {
         width: 100%;
-        height : 10%;
+        height: 10%;
         display: flex;
         justify-content: space-around;
     }
@@ -33,7 +36,6 @@
         height: 41px;
     }
     #nav_list_box {
-        
     }
     #nav_list {
         list-style: none;
@@ -44,7 +46,7 @@
         font-size: 18px;
         margin-left: 40px;
         margin-top: 15px;
-        font-family: 'SCDream7';
+        font-family: "SCDream7";
         color: white;
         float: left;
     }
@@ -68,14 +70,14 @@
 
         #nav_list {
             display: flex;
-            
+
             justify-content: space-around;
         }
 
         .nav_item {
             font-size: 14px;
             font-family: "SCDream5";
-            margin-left: 10px
+            margin-left: 10px;
         }
     }
 </style>

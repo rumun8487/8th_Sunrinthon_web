@@ -1,13 +1,25 @@
-<script>
 
-    setInterval(() => {
-        document.querySelector("#sideBar").classList.toggle("hidden-left");
-        document.querySelector("#applyButton").classList.toggle("hidden-right");
-    }, 1000);
+<script>
+    let y;
+    let hidden_left_state = "hidden-left";
+    let hidden_right_state = "hidden-right";
+
+    $: (y <= 150) ? sideBarStateControl(true) : sideBarStateControl(false);
+
+    function sideBarStateControl(state) {
+        if(state) {
+            hidden_left_state = "hidden-left";
+            hidden_right_state = "hidden-right";
+        } else {
+            hidden_left_state= null;
+            hidden_right_state = null;
+        }
+    }
 </script>
 
-<div>
-    <div id="sideBar" class="hidden-left">
+
+<div id="sideBarContainer">
+    <div id="sideBar" class={hidden_left_state}>
         <ul class="sc5">
             <li>메인</li>
             <li>타이머</li>
@@ -15,7 +27,7 @@
             <li>안내</li>
         </ul>
     </div>
-    <div id="applyButton" class="hidden-right">
+    <div id="applyButton" class={hidden_right_state}>
         <div id="circle" >
             <span class="sc7">신청</span>
         </div>
@@ -25,11 +37,11 @@
 
 
 <style>
-    #sideBar.hidden-left {
+    #sideBar.hidden-left{
         margin-left: -30%;
     }
 
-    #applyButton.hidden-right {
+    #applyButton.hidden-right{
         margin-left: 30%;
     }
 
@@ -79,4 +91,13 @@
         box-shadow: 0px 4px 10px 2px rgba(0, 0, 0, 0.44);
         background-color: #7F7562;
     }
+    @media only screen and (max-width: 820px) {
+        #sideBarContainer {
+            display: none;
+        }
+    }
+
 </style>
+
+
+<svelte:window bind:scrollY={y} />

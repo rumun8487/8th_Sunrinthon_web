@@ -1,6 +1,7 @@
 import Page1 from './Page1.svelte';
 import SideBar from './SideBar.svelte';
 import Page2 from './Page2.svelte';
+import Dummy from './Dummy.svelte';
 
 const Sidebar = new SideBar ({
 	target: document.body
@@ -16,4 +17,8 @@ const TimerSchedule = new Page2({
 	target: document.body
 })
 
-export default [Sidebar, Main, TimerSchedule];
+const DummyPage = new Dummy ({
+	target:document.body
+})
+
+export default [Sidebar, Main, TimerSchedule, DummyPage];
