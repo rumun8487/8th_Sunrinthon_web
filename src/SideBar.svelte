@@ -81,6 +81,10 @@
         font-size: 18px;
         margin: 10px;
     }
+
+    #sideBar > ul > li:hover {
+        color: var(--blue-green);
+    }
     
     #applyButton {
         z-index: 10;
