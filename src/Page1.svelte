@@ -1,7 +1,7 @@
 <script>
-    import Nav from "./Nav.svelte";
-    import Main from "./Main.svelte";
-    import Seperator from "./Seperator.svelte";
+    import Nav from "./page1/Nav.svelte";
+    import Main from "./page1/Main.svelte";
+    import Seperator from "./page1/Seperator.svelte";
 </script>
 
 <div id="full">

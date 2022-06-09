@@ -1,6 +1,6 @@
 <script>
-    import Timer from './Timer.svelte';
-    import Schedule from './Schedule.svelte';
+    import Timer from './page2/Timer.svelte';
+    import Schedule from './page2/Schedule.svelte';
 
     const handleUndefined = variable => variable || '00:00:00'
     const qualificationDue = new Date("6/18/22");
