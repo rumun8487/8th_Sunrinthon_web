@@ -1,10 +1,11 @@
 
 <script>
     let y;
+    let sideBarYOffset;
     let hidden_left_state = "hidden-left";
     let hidden_right_state = "hidden-right";
 
-    $: (y <= 150) ? sideBarStateControl(true) : sideBarStateControl(false);
+    $: (y <= 350) ? sideBarStateControl(true) : sideBarStateControl(false);
 
     function sideBarStateControl(state) {
         if(state) {
@@ -15,11 +16,22 @@
             hidden_right_state = null;
         }
     }
+
+    $: sideBarYOffset= y;
+
+    function sideBarFollowControl() {
+        if(hidden_left_state === null || hidden_left_state  === null){
+            return ;
+        }
+
+        
+    }
+
 </script>
 
 
-<div id="sideBarContainer">
-    <div id="sideBar" class={hidden_left_state}>
+<div id="sideBarContainer" >
+    <div id="sideBar" class={hidden_left_state} style="top: {sideBarYOffset}px;">
         <ul class="sc5">
             <li>메인</li>
             <li>타이머</li>
@@ -27,7 +39,7 @@
             <li>안내</li>
         </ul>
     </div>
-    <div id="applyButton" class={hidden_right_state}>
+    <div id="applyButton" class={hidden_right_state} style="top: calc(70% - 45px + {sideBarYOffset}px);">
         <div id="circle" >
             <span class="sc7">신청</span>
         </div>
@@ -57,7 +69,7 @@
         margin-left: 30px;
         box-shadow: 0px 4px 10px 2px rgba(0, 0, 0, 0.38);
         border-radius: 10px;
-        transition: all .4s ease-in-out;
+        transition: margin-left .4s ease-in-out, top .2s ease-out;
     }
     #sideBar > ul {
         display: flex;
@@ -76,8 +88,7 @@
         top: calc(70% - 45px);
         left: calc(100% - 90px - 2%);
         width: 100%;
-        transition: all .4s ease-in-out;
-        
+        transition: margin-left .4s ease-in-out, top .2s ease-out;
     }
     #circle {
         display: flex;
