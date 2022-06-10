@@ -19,9 +19,19 @@
 
     $: sideBarYOffset= y;
 
-    function handleSideBarClick( to ) {
-        
+    const openLink = () => () => {
+        window.open("https://bit.ly/8th_sunrinthon_tryout")
     }
+
+    const scrollTo = (where) => () => {
+        const el = document.querySelector(where);
+        
+        el.scrollIntoView({
+            behavior: 'smooth'
+        });
+    }
+
+
 
 </script>
 
@@ -29,14 +39,14 @@
 <div id="sideBarContainer" >
     <div id="sideBar" class={hidden_left_state} style="top: {sideBarYOffset}px;">
         <ul class="sc5">
-            <li>메인</li>
-            <li>타이머</li>
-            <li>참가팀</li>
-            <li>안내</li>
+            <li on:click={scrollTo("main")}>메인</li>
+            <li on:click={scrollTo("#page2")}>타이머</li>
+            <li on:click={scrollTo("#teamlist")}>참가팀</li>
+            <li on:click={scrollTo("#Information")}>안내</li>
         </ul>
     </div>
     <div id="applyButton" class={hidden_right_state} style="top: calc(70% - 45px + {sideBarYOffset}px);">
-        <div id="circle" >
+        <div id="circle" on:click={openLink()}>
             <span class="sc7">신청</span>
         </div>
     </div>
@@ -107,6 +117,7 @@
         box-shadow: 0px 4px 10px 2px rgba(0, 0, 0, 0.44);
         background-color: #7F7562;
         font-size: 2.4rem;
+        cursor: pointer;
     }
     @media only screen and (max-width: 820px) {
         #sideBarContainer {

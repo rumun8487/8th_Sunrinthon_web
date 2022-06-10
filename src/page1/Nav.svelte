@@ -1,4 +1,11 @@
 <script>
+    const scrollTo = (where) => () => {
+        const el = document.querySelector(where);
+        
+        el.scrollIntoView({
+            behavior: 'smooth'
+        });
+    }
 </script>
 
 <nav>
@@ -7,11 +14,11 @@
     </div>
     <div id="nav_list_box">
         <ul id="nav_list">
-            <li class="nav_item" onclick="">메인화면</li>
-            <li class="nav_item" onclick="">타이머 & 일정</li>
-            <li class="nav_item" onclick="">참가팀</li>
-            <li class="nav_item" onclick="">대회 안내</li>
-            <li class="nav_item" onclick="">카드뉴스</li>
+            <li class="nav_item" on:click={scrollTo("main")}>메인화면</li>
+            <li class="nav_item" on:click={scrollTo("#page2")}>타이머 & 일정</li>
+            <li class="nav_item" on:click={scrollTo("#teamlist")}>참가팀</li>
+            <li class="nav_item" on:click={scrollTo("#Information")}>대회 안내</li>
+            <li class="nav_item" on:click={scrollTo("#page3contentBox")}>카드뉴스</li>
         </ul>
     </div>
 </nav>
@@ -49,6 +56,7 @@
         font-family: "SCDream7";
         color: white;
         float: left;
+        cursor: pointer;
     }
 
     @media only screen and (max-width: 820px) {

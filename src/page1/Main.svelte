@@ -1,3 +1,9 @@
+<script>
+    const openLink = () => () => {
+        window.open("https://bit.ly/8th_sunrinthon_tryout")
+    }
+</script>
+
 <main>
     <div id="page1_cont1">
         <div id="content1Box">
@@ -7,7 +13,7 @@
             </div>
             <div id="assign">
                 <div id="linkBox">
-                    <span class="sc7">신청하기</span>
+                    <span class="sc7" on:click={openLink()}>신청하기</span>
                 </div>
             </div>
         </div>
@@ -62,6 +68,7 @@
         border-radius: 10px;
         padding: 5px 40px 5px;
         box-shadow: 0px 10px 27px 2px rgba(0, 0, 0, 0.08);
+        cursor: pointer;
     }
 
     #linkBox > span {

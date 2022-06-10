@@ -136,6 +136,10 @@ html {
 	color: var(--black);
 }
 
+.white {
+	color: white;
+}
+
 .sc1 {
 	font-family: "SCDream1";
 }

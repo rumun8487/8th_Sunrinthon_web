@@ -2,6 +2,7 @@
     import Info from "./page3/Info.svelte";
     import CardNews from "./page3/CardNews.svelte";
     import InfoImages from './page3/InfoImages.svelte';
+
     let selection;
     let open;
 </script>
@@ -20,16 +21,13 @@
             <CardNews></CardNews>
         </div>
     </div>
-    
 </div>
-
 <style>
     #page3 {
         background-color: var(--cream);
         width: 100%;
         height: 170%;
         display: flex;
-        position: absolute;
         align-content: center;
         justify-content: center;
     }
@@ -48,7 +46,7 @@
     }
 
     #page3Cont2 {
-        height: 60%;
+        height: 73%;
     }
 
 

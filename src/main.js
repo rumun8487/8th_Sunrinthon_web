@@ -4,6 +4,7 @@ import Page3 from './Page3.svelte';
 
 import SideBar from './SideBar.svelte';
 import Team_list from './Team_list.svelte';
+import FooterApp from './Footer.svelte'
 
 import Dummy from './Dummy.svelte';
 
@@ -28,10 +29,11 @@ const InfoCard = new Page3({
 	target: document.body
 })
 
-const DummyPage = new Dummy ({
-	target:document.body
+const Footer = new FooterApp({
+	target: document.body
 })
 
 
 
-export default [Sidebar, Main,TimerSchedule,TeamList, InfoCard, DummyPage];
+
+export default [Sidebar, Main,TimerSchedule, TeamList, InfoCard, Footer];
