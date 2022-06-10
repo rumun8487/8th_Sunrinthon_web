@@ -2,7 +2,7 @@
     <div id="contentBox">
         <div id="textBox">
             <div id="title"><p class="sc5 cream">Sunrinthon Team Lists</p></div>
-            <div id="korTitle"><p class="sc7 cream">선린톤 본선 참가팀 목록</p></div>
+            <div id ="korTitle"><p class="sc7 cream">선린톤 본선 참가팀 목록</p></div>
             <div id="text1"><p class="sc7 cream">Coming Soon</p></div>
         </div>
     <!--<div id="slider">

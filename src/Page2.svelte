@@ -51,7 +51,6 @@
         /* height: 100%; */
         /* 스케줄 표 없을 때 */
         height: 40%;
-
         width: 100%;
         background-color: var(--cream);
         display: flex;
