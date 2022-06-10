@@ -20,6 +20,7 @@
         width: 100%;
         height: 150%;
         display: flex;
+        position: absolute;
         align-content: center;
         justify-content: center;
 

@@ -5,11 +5,11 @@
     <div id="title"><p class="sc5">Card News</p></div>
     <div id="kr-title"><p class="sc8">카드 뉴스</p></div>
     <div id="cardNews">
-        <div><object data="/card1.svg" type="image/svg+xml" title="sibal">브라우저 지원 x</object></div>
-        <div><object data="" type=""></object></div>
-        <div></div>
-        <div></div>
-        <div></div>
+        <object data="/card1.svg" type="image/svg+xml"></object>
+        <object data="/card2.svg" type="image/svg+xml"></object>
+        <object data="/card3.svg" type="image/svg+xml"></object>
+        <object data="/card4.svg" type="image/svg+xml"></object>
+        <object data="/card5.svg" type="image/svg+xml"></object>
     </div>
 </div>
 
@@ -26,13 +26,14 @@
 
 
 <style>
-    #contentBox{
-        
-
+    #CardNews{
+        position: absolute;
+        flex-direction: row;
+        width: 150%;
     }
 
     #title > p{
-        font-size: 18px;
+        font-size: 18p  x;
     }
 
     #kr-title >p{

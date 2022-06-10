@@ -20,7 +20,20 @@
 </div>
 
 <style>
-    #Infomation{
+    
+#infoCard1{
+    position: absolute;
+    width: 166px;
+    height: 224px;
+    left: 217px;
+    top: 2466px;
+
+    background: #F8F0DE;
+    box-shadow: 0px 3px 12px 2px rgba(0, 0, 0, 0.41);
+    border-radius: 10px;
+}
+
+#Infomation{
         display: flex;
         flex-direction: row center; 
         flex-basis: auto;
