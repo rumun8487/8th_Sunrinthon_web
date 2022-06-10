@@ -1,5 +1,4 @@
-<body>
-    
+
 
 <div id="page3contentBox">
     <div id="cardNewsTextBox">
@@ -8,21 +7,22 @@
     </div>
 
     <div class="cardNews">
-
-        <div class="slide">
-            <img src="/cards/card1.png">
-        </div>
-        <div class="slide">
-            <img src="/cards/card2.png">
-        </div>
-        <div class="slide">
-            <img src="/cards/card3.png">
-        </div>
-        <div class="slide">
-            <img src="/cards/card4.png">
-        </div>
-        <div class="slide">
-            <img src="/cards/card5.png">
+        <div id="slideContainer">
+            <div class="slide">
+                <img src="/cards/card1.png">
+            </div>
+            <div class="slide">
+                <img src="/cards/card2.png">
+            </div>
+            <div class="slide">
+                <img src="/cards/card3.png">
+            </div>
+            <div class="slide">
+                <img src="/cards/card4.png">
+            </div>
+            <div class="slide">
+                <img src="/cards/card5.png">
+            </div>
         </div>
     </div>
 
@@ -37,21 +37,41 @@
     #cardNewsTextBox{
         margin-left: 15%;
     }
+    #slideContainer {
+        display: flex;
+        animation: 20s linear 1s infinite alternate scroll;
+    }
+
+    #slideContainer :after {
+        
+    }
+
     .cardNews{
         display: flex;
         width: 100%;
-        filter: drop-shadow(0px 4px 20px rgba(0, 0, 0, 0.58));
-        animation: scroll 40s linear infinite;
+        filter: drop-shadow(0px 4px 20px rgba(0, 0, 0, 0.4));
+        
     }
+
+    .cardNews:after {
+        background-image: linear-gradient(to right, var(--rgba-grey) 1px, transparent 100px);
+    }
+
+
+    /* .cardNews:hover {
+        animation-play-state: paused;
+    } */
 
     .slide {
         display: flex;
         align-items: center;
-        perspective: 20em;
+        perspective: 10em;
+        transition: transform .4s;
     }
 
-    img:hover{
-        transform: translateZ(20px);
+    .slide:hover{
+        transform: scale(1.01);
+        
     }
 
     #title > p{
@@ -62,39 +82,16 @@
     #kr-title >p{
         font-size: 2.4rem;
     }
-    /* Rectangle 25 */
 
-
-    .cardNews::before,
-    .cardNews::after{
-        background: linear-gradient(90deg, rgba(46, 55, 53, 0.17) 0%, rgba(217, 217, 217, 0) 95.09%);
-        content: '';
-        height: 100%;
-        position: absolute;
-        width: 15%;
-        z-index: 2;
-    }
-
-    .cardNews::before{
-        left: 0;
-        top: 0;
-    }
-
-    .cardNews::after{
-        right: 0;
-        top: 0;
-        transform: rotateZ(180deg);
-    }
 
     @keyframes scroll{
         0%{
-            transform: translateX(0);
+            transform: translateX(-50%);
         }
         100%{
-            transform: translateX(-25em * 9);
+            transform: translateX(5%);
         }
     }
 
 </style>
 
-</body>

@@ -27,7 +27,7 @@
     #page3 {
         background-color: var(--cream);
         width: 100%;
-        height: 150%;
+        height: 170%;
         display: flex;
         position: absolute;
         align-content: center;

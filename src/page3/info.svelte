@@ -20,7 +20,7 @@
 <div id="Information">
     <div id="InfoTextBox">
         <p class="sc5 grey">2022 8th Sunrinthon Information</p>
-        <p class="sc8 black">2022 8th 선린톤 안내 {checkSame} {isOpen}</p>
+        <p class="sc8 black">2022 8th 선린톤 안내</p>
     </div>
     <div id="sectionsBox">
         <div class="section" on:click={changeSelection(1)}>
@@ -90,6 +90,8 @@
 
     #InfoTextBox :nth-child(2) {
         font-size: 2.4rem;
+        margin-top: 1em;
+        margin-bottom: 1em;
     }
 
     #InfoTextBox {
