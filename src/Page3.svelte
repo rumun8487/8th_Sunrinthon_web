@@ -40,6 +40,11 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+        height: 40%;
+    }
+
+    #page3Cont2 {
+        height: 60%;
     }
 
 

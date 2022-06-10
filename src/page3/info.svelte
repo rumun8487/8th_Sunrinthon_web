@@ -11,7 +11,6 @@
             <div class="sectionText">
                 <p class="sc7 sectionP">선린 해커톤?</p>
             </div>
-            
         </div>
         <div class="section">
             <div class="svgContainer">
@@ -59,32 +58,36 @@
 
 <style>
     #Information {
+        display: flex;
+        flex-direction: column;
         width: 70%;
         height: 45%;
         
     }
     #InfoTextBox :nth-child(1){
-        margin: 1rem 0 1rem 0;
         font-size: 1.8rem;
 
     }
 
     #InfoTextBox :nth-child(2) {
         font-size: 2.4rem;
-        margin-bottom: 3rem;
+    }
+
+    #InfoTextBox {
     }
 
     #sectionsBox {
-        align-self: stretch;
+        align-items: stretch;
         height: 100%;
         display: flex;
-        align-items: stretch;
+
     }
     .sectionText {
         display: flex;
         justify-content: center;
         align-items: center;
         height: 100%;
+        background-color: red;
     }
 
     .sectionP {
@@ -95,7 +98,8 @@
     }
 
     object {
-        height: 100%;
+
+        background-color: yellow;
     }
 
     .section {
@@ -103,11 +107,21 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        width: calc(100% /6 - 10px);
+        width: 15%;
         background-color: var(--cream);
         box-shadow: 0px 3px 12px 2px rgba(0, 0, 0, 0.41);
         border-radius: 10px;
-        
+        justify-content: center;
+    }
+
+    .svgContainer {
+        min-height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width:80%;
+        height: 100%;
+        background-color: green;
     }
 
     .section:not( :last-child) {
