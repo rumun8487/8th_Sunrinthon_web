@@ -43,7 +43,7 @@
     }
     .nav_item {
         display: list-item;
-        font-size: 18px;
+        font-size: 1.8em;
         margin-left: 40px;
         margin-top: 15px;
         font-family: "SCDream7";
@@ -75,7 +75,7 @@
         }
 
         .nav_item {
-            font-size: 14px;
+            font-size: 1.4rem;
             font-family: "SCDream5";
             margin-left: 10px;
         }

@@ -19,11 +19,7 @@
 
     $: sideBarYOffset= y;
 
-    function sideBarFollowControl() {
-        if(hidden_left_state === null || hidden_left_state  === null){
-            return ;
-        }
-
+    function handleSideBarClick( to ) {
         
     }
 
@@ -49,6 +45,9 @@
 
 
 <style>
+    #sideBarContainer {
+        
+    }
     #sideBar.hidden-left{
         margin-left: -30%;
     }
@@ -56,6 +55,7 @@
     #applyButton.hidden-right{
         margin-left: 30%;
     }
+
 
     #sideBar {
         display: flex;
@@ -78,7 +78,7 @@
         justify-content: space-around;
     }
     #sideBar > ul > li {
-        font-size: 18px;
+        font-size: 1.8rem;
         margin: 10px;
     }
 
@@ -93,6 +93,7 @@
         left: calc(100% - 90px - 2%);
         width: 100%;
         transition: margin-left .4s ease-in-out, top .2s ease-out;
+        
     }
     #circle {
         display: flex;
@@ -105,6 +106,7 @@
         border-radius: 50%;
         box-shadow: 0px 4px 10px 2px rgba(0, 0, 0, 0.44);
         background-color: #7F7562;
+        font-size: 2.4rem;
     }
     @media only screen and (max-width: 820px) {
         #sideBarContainer {

@@ -25,11 +25,11 @@
         flex-direction: column;
     }
     #textBox :nth-child(1) {
-        font-size: 24px;
+        font-size: 2.4rem;
         align-self: flex-start;
     }
     #textBox :nth-child(2) {
-        font-size: 24px;
+        font-size: 2.4rem;
         align-self: flex-end;
     }
     #bubbleBox {
@@ -62,7 +62,7 @@
     }
 
     #speechBubble > p {
-        font-size: 64px;
+        font-size: 6.4rem;
         text-align: center;
     }
 
@@ -76,7 +76,7 @@
             right: calc(50% - 30px)
         }
         #speechBubble > p {
-        font-size: 30px;
+        font-size: 3rem;
     }
     }
 </style>

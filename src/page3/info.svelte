@@ -1,42 +1,116 @@
-<div id="Infomation">
-    <div id="infoCard1">
-        <object data="/infoBackground.svg" type="image/svg+xml"></object>
+<div id="Information">
+    <div id="InfoTextBox">
+        <p class="sc5 grey">2022 8th Sunrinthon Information</p>
+        <p class="sc8 black">2022 8th 선린톤 안내</p>
     </div>
-    <div id="infoCard2">
-        <object data="/infoBackground.svg" type="image/svg+xml"></object>
-    </div>
-    <div id="infoCard3">
-        <object data="/infoBackground.svg" type="image/svg+xml"></object>
-    </div>
-    <div id="infoCard4">
-        <object data="/infoBackground.svg" type="image/svg+xml"></object>
-    </div>
-    <div id="infoCard5">
-        <object data="/infoBackground.svg" type="image/svg+xml"></object>
-    </div>
-    <div id="infoCard6">
-        <object data="/infoBackground.svg" type="image/svg+xml"></object>
+    <div id="sectionsBox">
+        <div class="section">
+            <div class="svgContainer">
+                <object data="/svgs/whatsHackathon.svg" type="image/svg+xml" title="whatsHackathon"></object>
+            </div>
+            <div class="sectionText">
+                <p class="sc7 sectionP">선린 해커톤?</p>
+            </div>
+            
+        </div>
+        <div class="section">
+            <div class="svgContainer">
+                <object data="/svgs/offlineInfo.svg" type="image/svg+xml" title="offlineInfo"></object>
+            </div>
+            <div class="sectionText">
+                <p class="sc7 sectionP">오프라인 안내</p>
+            </div>
+            
+        </div>
+        <div class="section">
+            <div class="svgContainer">
+                <object data="/svgs/finalInfo.svg" type="image/svg+xml" title="finalInfo"></object>
+            </div>
+            <div class="sectionText">
+                <p class="sc7 sectionP">본선 관련 안내</p>
+            </div>
+        </div>
+        <div class="section">
+            <div class="svgContainer">
+                <object data="/svgs/qualificationInfo.svg" type="image/svg+xml" title="qualificationInfo"></object>
+            </div>
+            <div class="sectionText">
+                <p class="sc7 sectionP">예선 관련 안내</p>
+            </div>
+        </div>
+        <div class="section">
+            <div class="svgContainer">
+                <object data="/svgs/questionSNS.svg" type="image/svg+xml" title="offlineInfo"></object>
+            </div>
+            <div class="sectionText">
+                <p class="sc7 sectionP">문의 / SNS</p>
+            </div>
+        </div>
+        <div class="section">
+            <div class="svgContainer">
+                <object data="/svgs/guideline.svg" type="image/svg+xml" title="guidline"></object>
+            </div>
+            <div class="sectionText">
+                <p class="sc7 sectionP">심사기준</p>
+            </div>
+        </div>
     </div>
 </div>
 
 <style>
-    
-#infoCard1{
-    position: absolute;
-    width: 166px;
-    height: 224px;
-    left: 217px;
-    top: 2466px;
+    #Information {
+        width: 70%;
+        height: 45%;
+        
+    }
+    #InfoTextBox :nth-child(1){
+        margin: 1rem 0 1rem 0;
+        font-size: 1.8rem;
 
-    background: #F8F0DE;
-    box-shadow: 0px 3px 12px 2px rgba(0, 0, 0, 0.41);
-    border-radius: 10px;
-}
+    }
 
-#Infomation{
+    #InfoTextBox :nth-child(2) {
+        font-size: 2.4rem;
+        margin-bottom: 3rem;
+    }
+
+    #sectionsBox {
+        align-self: stretch;
+        height: 100%;
         display: flex;
-        flex-direction: row center; 
-        flex-basis: auto;
-        align-content: center;
+        align-items: stretch;
+    }
+    .sectionText {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+    }
+
+    .sectionP {
+        color: #5e5e60;
+        font-size: 2.4rem;
+        
+        
+    }
+
+    object {
+        height: 60%;
+    }
+
+    .section {
+        padding-top: 3rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: calc(100% /6 - 10px);
+        background-color: var(--cream);
+        box-shadow: 0px 3px 12px 2px rgba(0, 0, 0, 0.41);
+        border-radius: 10px;
+        
+    }
+
+    .section:not( :last-child) {
+        margin-right: 20px;
     }
 </style>

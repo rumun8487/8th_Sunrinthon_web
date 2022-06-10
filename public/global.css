@@ -65,15 +65,17 @@
 	--skyblue: #61a6ad;
 	--rgba-skyblue: rgba(97, 166, 173, 0.7);
 
+	--black: #3c3c3c;
+
 	--width: calc( 100vw - 100% );
 }
 
-html {
+html{
 	position: relative;
 	width: 100%;
 	overflow-x: hidden;
 	height: 100%;
-	
+	font-size: 62.5%;
 }
 
 body {
@@ -128,6 +130,10 @@ html {
 
 .skyblue {
 	color: var(--skyblue);
+}
+
+.black {
+	color: var(--black);
 }
 
 .sc1 {
