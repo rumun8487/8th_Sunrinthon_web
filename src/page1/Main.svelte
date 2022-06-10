@@ -47,11 +47,11 @@
     }
 
     #textBox :nth-child(1) {
-        font-size: 24px;
+        font-size: 2.4rem;
     }
 
     #textBox :nth-child(2) {
-        font-size: 50px;
+        font-size: 5rem;
     }
 
 
@@ -65,7 +65,7 @@
     }
 
     #linkBox > span {
-        font-size: 28px;
+        font-size: 2.8rem;
     }
 
     #textBubble {
@@ -111,11 +111,11 @@
         }
 
         #textBox :nth-child(1) {
-            font-size: 20px;
+            font-size: 2rem;
         }
 
         #textBox :nth-child(2) {
-            font-size: 35px;
+            font-size: 3.5rem;
         }
 
         #assign {
@@ -132,7 +132,7 @@
         }
 
         #linkBox {
-            font-size: 18px;
+            font-size: 1.8rem;
         }
     }
 

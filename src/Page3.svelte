@@ -34,11 +34,11 @@
     }
 
     #title > p{
-        font-size: 18px;
+        font-size: 1.8rem;
         margin-top: 1%;
     }
     #kr-title>p{
-        font-size: 24px;
+        font-size: 2.4rem;
     }
 
 

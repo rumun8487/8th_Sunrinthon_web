@@ -59,7 +59,7 @@
     }
     
     #title > p {
-        font-size: 18px;
+        font-size: 1.8rem;
     }
 
     #contentBox {

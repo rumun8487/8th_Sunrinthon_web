@@ -46,7 +46,7 @@
         width: 100%;
         height: calc(90% / 10);
         bottom: 0px;
-        font-size: 18px;
+        font-size: 1.8rem;
         display: flex;
         justify-content: center;
         text-align: center;

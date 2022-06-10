@@ -44,15 +44,15 @@
     }
 
     #title > p{
-        font-size: 18px;
+        font-size: 1.8rem;
     }
     
     #korTitle{
-        font-size: 24px;
+        font-size: 2.4rem;
     }
 
     #text1{
-        font-size: 64px;
+        font-size: 6.4rem;
         margin-top: 13%;
     }
     

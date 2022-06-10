@@ -96,7 +96,7 @@
     .ScheduleTextBox {
         width: fit-content;
         text-align: center;
-        font-size: 18px;
+        font-size: 1.8em;
     }
     .markerSvg {
         margin-left: 9px;

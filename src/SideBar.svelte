@@ -19,11 +19,7 @@
 
     $: sideBarYOffset= y;
 
-    function sideBarFollowControl() {
-        if(hidden_left_state === null || hidden_left_state  === null){
-            return ;
-        }
-
+    function handleSideBarClick( to ) {
         
     }
 
@@ -78,7 +74,7 @@
         justify-content: space-around;
     }
     #sideBar > ul > li {
-        font-size: 18px;
+        font-size: 1.8rem;
         margin: 10px;
     }
 
