@@ -1,10 +1,29 @@
+<script>
+    export let select = 1, isOpen = false;
+
+    let checkSame;
+    const changeSelection = num =>  () => {
+        if(checkSame == num){
+            checkSame = null;
+            select = num;
+            isOpen = false;
+        } else {
+            isOpen = true;
+            select = num;
+            checkSame = num;
+        }
+    };
+
+    
+</script>
+
 <div id="Information">
     <div id="InfoTextBox">
         <p class="sc5 grey">2022 8th Sunrinthon Information</p>
-        <p class="sc8 black">2022 8th 선린톤 안내</p>
+        <p class="sc8 black">2022 8th 선린톤 안내 {checkSame} {isOpen}</p>
     </div>
     <div id="sectionsBox">
-        <div class="section">
+        <div class="section" on:click={changeSelection(1)}>
             <div class="svgContainer">
                 <object data="/svgs/whatsHackathon.svg" type="image/svg+xml" title="whatsHackathon">이 브라우저는 svg를 지원하지않습니다.</object>
             </div>
@@ -12,7 +31,7 @@
                 <p class="sc7 sectionP">선린 해커톤?</p>
             </div>
         </div>
-        <div class="section">
+        <div class="section" on:click={changeSelection(2)}>
             <div class="svgContainer">
                 <object data="/svgs/offlineInfo.svg" type="image/svg+xml" title="offlineInfo">이 브라우저는 svg를 지원하지않습니다.</object>
             </div>
@@ -21,7 +40,7 @@
             </div>
             
         </div>
-        <div class="section">
+        <div class="section" on:click={changeSelection(3)}>
             <div class="svgContainer">
                 <object data="/svgs/finalInfo.svg" type="image/svg+xml" title="finalInfo">이 브라우저는 svg를 지원하지않습니다.</object>
             </div>
@@ -29,7 +48,7 @@
                 <p class="sc7 sectionP">본선 관련 안내</p>
             </div>
         </div>
-        <div class="section">
+        <div class="section" on:click={changeSelection(4)}>
             <div class="svgContainer">
                 <object data="/svgs/qualificationInfo.svg" type="image/svg+xml" title="qualificationInfo">이 브라우저는 svg를 지원하지않습니다.</object>
             </div>
@@ -37,7 +56,7 @@
                 <p class="sc7 sectionP">예선 관련 안내</p>
             </div>
         </div>
-        <div class="section">
+        <div class="section" on:click={changeSelection(5)}>
             <div class="svgContainer">
                 <object data="/svgs/questionSNS.svg" type="image/svg+xml" title="offlineInfo">이 브라우저는 svg를 지원하지않습니다.</object>
             </div>
@@ -45,7 +64,7 @@
                 <p class="sc7 sectionP">문의 / SNS</p>
             </div>
         </div>
-        <div class="section">
+        <div class="section" on:click={changeSelection(6)}>
             <div class="svgContainer">
                 <object data="/svgs/guideline.svg" type="image/svg+xml" title="guidline">이 브라우저는 svg를 지원하지않습니다.</object>
             </div>

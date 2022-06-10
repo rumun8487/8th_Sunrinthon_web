@@ -1,13 +1,17 @@
 <script>
     import Info from "./page3/Info.svelte";
     import CardNews from "./page3/CardNews.svelte";
+    import InfoImages from './page3/InfoImages.svelte';
+    let selection;
+    let open;
 </script>
 
 <div id="page3" >
     <div id="contentWrapper">
         <div id="page3Cont1" class="grid">
-            <Info></Info>
+            <Info bind:select={selection} bind:isOpen = {open}   ></Info>
         </div>
+        <InfoImages currentImage={selection} isOpen={open}></InfoImages>
         <div id="page3Cont2" class="grid">
             <!-- <div id="cardNewsTextBox">
                 <p>Card News</p>
