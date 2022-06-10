@@ -87,7 +87,6 @@
         justify-content: center;
         align-items: center;
         height: 100%;
-        background-color: red;
     }
 
     .sectionP {
@@ -98,8 +97,7 @@
     }
 
     object {
-
-        background-color: yellow;
+        width: 40%;
     }
 
     .section {
@@ -112,16 +110,15 @@
         box-shadow: 0px 3px 12px 2px rgba(0, 0, 0, 0.41);
         border-radius: 10px;
         justify-content: center;
+        height: 150%;
     }
 
     .svgContainer {
-        min-height: 100%;
         display: flex;
         justify-content: center;
         align-items: center;
         width:80%;
-        height: 100%;
-        background-color: green;
+        min-height: 70%;
     }
 
     .section:not( :last-child) {

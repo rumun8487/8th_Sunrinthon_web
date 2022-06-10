@@ -3,12 +3,12 @@
     import CardNews from "./page3/CardNews.svelte";
 </script>
 
-<div id="page3" class="grid">
+<div id="page3" >
     <div id="contentWrapper">
-        <div id="page3Cont1">
+        <div id="page3Cont1" class="grid">
             <Info></Info>
         </div>
-        <div id="page3Cont2">
+        <div id="page3Cont2" class="grid">
             <!-- <div id="cardNewsTextBox">
                 <p>Card News</p>
                 <p>카드 뉴스</p>
@@ -33,7 +33,6 @@
     #contentWrapper {
         width: 100%;
         height: 85%;
-        margin-top: 3%;
     }
 
     #page3Cont1 {
@@ -41,6 +40,7 @@
         flex-direction: column;
         align-items: center;
         height: 40%;
+        padding-top: 3%;
     }
 
     #page3Cont2 {
