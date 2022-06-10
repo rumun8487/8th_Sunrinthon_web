@@ -6,7 +6,7 @@
     <div id="sectionsBox">
         <div class="section">
             <div class="svgContainer">
-                <object data="/svgs/whatsHackathon.svg" type="image/svg+xml" title="whatsHackathon"></object>
+                <object data="/svgs/whatsHackathon.svg" type="image/svg+xml" title="whatsHackathon">이 브라우저는 svg를 지원하지않습니다.</object>
             </div>
             <div class="sectionText">
                 <p class="sc7 sectionP">선린 해커톤?</p>
@@ -15,7 +15,7 @@
         </div>
         <div class="section">
             <div class="svgContainer">
-                <object data="/svgs/offlineInfo.svg" type="image/svg+xml" title="offlineInfo"></object>
+                <object data="/svgs/offlineInfo.svg" type="image/svg+xml" title="offlineInfo">이 브라우저는 svg를 지원하지않습니다.</object>
             </div>
             <div class="sectionText">
                 <p class="sc7 sectionP">오프라인 안내</p>
@@ -24,7 +24,7 @@
         </div>
         <div class="section">
             <div class="svgContainer">
-                <object data="/svgs/finalInfo.svg" type="image/svg+xml" title="finalInfo"></object>
+                <object data="/svgs/finalInfo.svg" type="image/svg+xml" title="finalInfo">이 브라우저는 svg를 지원하지않습니다.</object>
             </div>
             <div class="sectionText">
                 <p class="sc7 sectionP">본선 관련 안내</p>
@@ -32,7 +32,7 @@
         </div>
         <div class="section">
             <div class="svgContainer">
-                <object data="/svgs/qualificationInfo.svg" type="image/svg+xml" title="qualificationInfo"></object>
+                <object data="/svgs/qualificationInfo.svg" type="image/svg+xml" title="qualificationInfo">이 브라우저는 svg를 지원하지않습니다.</object>
             </div>
             <div class="sectionText">
                 <p class="sc7 sectionP">예선 관련 안내</p>
@@ -40,7 +40,7 @@
         </div>
         <div class="section">
             <div class="svgContainer">
-                <object data="/svgs/questionSNS.svg" type="image/svg+xml" title="offlineInfo"></object>
+                <object data="/svgs/questionSNS.svg" type="image/svg+xml" title="offlineInfo">이 브라우저는 svg를 지원하지않습니다.</object>
             </div>
             <div class="sectionText">
                 <p class="sc7 sectionP">문의 / SNS</p>
@@ -48,7 +48,7 @@
         </div>
         <div class="section">
             <div class="svgContainer">
-                <object data="/svgs/guideline.svg" type="image/svg+xml" title="guidline"></object>
+                <object data="/svgs/guideline.svg" type="image/svg+xml" title="guidline">이 브라우저는 svg를 지원하지않습니다.</object>
             </div>
             <div class="sectionText">
                 <p class="sc7 sectionP">심사기준</p>
@@ -95,7 +95,7 @@
     }
 
     object {
-        height: 60%;
+        height: 100%;
     }
 
     .section {
