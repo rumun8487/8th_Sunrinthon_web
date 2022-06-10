@@ -18,42 +18,42 @@
                 <p class="sc8">본선 시작</p>
                 <p class="sc5">{MissionTimeLine[0]}</p>
             </div>
-            <object class="markerSvg" type="image/svg+xml" data="/markerIcon.svg" title="marker">이 브라우저는 svg를 지원하지않습니다.</object>
+            <object class="markerSvg" type="image/svg+xml" data="/svgs/markerIcon.svg" title="marker">이 브라우저는 svg를 지원하지않습니다.</object>
         </div>
         <div class="MarkerBox">
             <div class="ScheduleTextBox">
                 <p class="sc8">미션 1</p>
                 <p class="sc5">{MissionTimeLine[1]}</p>
             </div>
-            <object class="markerSvg"type="image/svg+xml" data="/markerIcon.svg" title="marker">이 브라우저는 svg를 지원하지않습니다.</object>
+            <object class="markerSvg"type="image/svg+xml" data="/svgs/markerIcon.svg" title="marker">이 브라우저는 svg를 지원하지않습니다.</object>
         </div>
         <div class="MarkerBox">
             <div class="ScheduleTextBox">
                 <p class="sc8">레크레이션</p>
                 <p class="sc5">{MissionTimeLine[2]}</p>
             </div>
-            <object class="markerSvg"type="image/svg+xml" data="/markerIcon.svg" title="marker">이 브라우저는 svg를 지원하지않습니다.</object>
+            <object class="markerSvg"type="image/svg+xml" data="/svgs/markerIcon.svg" title="marker">이 브라우저는 svg를 지원하지않습니다.</object>
         </div>
         <div class="MarkerBox">
             <div class="ScheduleTextBox">
                 <p class="sc8">멘토링</p>
                 <p class="sc5">{MissionTimeLine[3]}</p>
             </div>
-            <object class="markerSvg"type="image/svg+xml" data="/markerIcon.svg" title="marker">이 브라우저는 svg를 지원하지않습니다.</object>
+            <object class="markerSvg"type="image/svg+xml" data="/svgs/markerIcon.svg" title="marker">이 브라우저는 svg를 지원하지않습니다.</object>
         </div>
         <div class="MarkerBox">
             <div class="ScheduleTextBox">
                 <p class="sc8">스텝 대전</p>
                 <p class="sc5">{MissionTimeLine[4]}</p>
             </div>
-            <object class="markerSvg"type="image/svg+xml" data="/markerIcon.svg" title="marker">이 브라우저는 svg를 지원하지않습니다.</object>
+            <object class="markerSvg"type="image/svg+xml" data="/svgs/markerIcon.svg" title="marker">이 브라우저는 svg를 지원하지않습니다.</object>
         </div>
         <div class="MarkerBox">
             <div class="ScheduleTextBox">
                 <p class="sc8">미션 2</p>
                 <p class="sc5">{MissionTimeLine[5]}</p>
             </div> 
-            <object class="markerSvg"type="image/svg+xml" data="/markerIcon.svg" title="marker">이 브라우저는 svg를 지원하지않습니다.</object>
+            <object class="markerSvg"type="image/svg+xml" data="/svgs/markerIcon.svg" title="marker">이 브라우저는 svg를 지원하지않습니다.</object>
         </div>
     </div>
     <div id="barDescription">
